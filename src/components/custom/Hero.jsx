@@ -86,31 +86,24 @@ function Hero({ heroRef }) {
       <div className="text px-10 md:px-40 flex flex-col items-center justify-center gap-4">
         <div className="heading p-2 md:py-5">
           <h1 className="font-black text-3xl md:text-5xl bg-gradient-to-b from-primary/90 to-primary/60 bg-clip-text text-transparent">
-            Embark on Electrifying <br /> Adventures with
+          Create Stories  <br /> Worth Telling with
           </h1>
           <h1 className="font-black text-5xl md:text-9xl bg-gradient-to-b from-blue-400 to-blue-700 bg-clip-text text-center text-transparent pb-4">
-            JourneyJolt
+            Globe Trotters
           </h1>
         </div>
         <div className="desc">
-          <h5 className="opacity-90 mx-auto text-center text-lg font-medium tracking-tight text-primary/80 md:text-xl">
-            Your trusted trip planner and adventure guide.
+          <h5 className="opacity-90 mx-auto text-center text-lg font-medium tracking-tight text-primary/80 md:text-xl italic">
+          A one-stop solution for all your quirky travel dreams, adventures, and discoveries!
           </h5>
         </div>
-        <div className="buttons flex flex-col gap-3 md:flex-row">
+        <div className="buttons flex justify-center items-center py-4">
           <Link to="/plan-a-trip">
-            <Button className="">
+            <Button className="px-6 py-4 text-md md:text-l rounded-md">
               {isAuthenticated
                 ? "Let's Make Another Trip"
-                : "Plan a Trip, It's Free"}
+                : "Plan a Trip"}
             </Button>
-          </Link>
-          <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            to="https://www.buymeacoffee.com/satendra03"
-          >
-            <Button variant="secondary">Buy Me a Coffee</Button>
           </Link>
         </div>
         <div className="marquee relative flex w-[75vw] flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
